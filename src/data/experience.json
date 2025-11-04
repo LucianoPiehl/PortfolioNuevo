@@ -1,0 +1,14 @@
+[
+  {
+    "role": "Desarrollador Backend",
+    "company": "Freelance",
+    "period": "2023 - Actualidad",
+    "description": "Diseño e implementación de APIs REST y sistemas backend escalables."
+  },
+  {
+    "role": "Asistente de Desarrollo",
+    "company": "Empresa XYZ",
+    "period": "2022 - 2023",
+    "description": "Colaboración en proyectos internos usando Spring Boot y PostgreSQL."
+  }
+]

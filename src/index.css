@@ -1,0 +1,965 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body y modo dark/light */
+body {
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+body.dark {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+}
+
+/* Header */
+header {
+  background-color: #fff;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body.dark header {
+  background-color: #2c2c2c;
+  border-bottom: 1px solid #444;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #333;
+  margin-right: 3rem;
+  font-weight: 500;
+}
+
+header nav a:hover {
+  color: #007bff;
+}
+
+body.dark header nav a {
+  color: #f0f0f0;
+}
+
+body.dark header nav a:hover {
+  color: #66b2ff;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  border-top: 1px solid #ccc;
+  font-size: 0.9rem;
+}
+
+body.dark footer {
+  border-top: 1px solid #444;
+}
+
+/* Main content */
+main {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Home / About / Experience / Contact */
+section {
+  margin-bottom: 2rem;
+}
+
+/* Projects */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.project-card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+body.dark .project-card {
+  background-color: #2c2c2c;
+  border: 1px solid #444;
+}
+
+/* Buttons */
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Forms (Contacto) */
+input, textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+body.dark input, body.dark textarea {
+  background-color: #333;
+  border: 1px solid #555;
+  color: #f0f0f0;
+}
+
+/* Modo dark/light toggle */
+.theme-toggle {
+  cursor: pointer;
+  padding: 0.3rem 0.5rem;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  font-size: 0.85rem;
+}
+.theme-toggle:hover {
+  background-color: #0056b3;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header nav {
+    margin-top: 0.5rem;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* Botón general */
+.theme-toggle {
+  background: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+/* Apariencia en modo claro */
+body:not(.dark) .theme-toggle {
+  color: #111;
+  border: 1px solid #111;
+}
+
+body:not(.dark) .theme-toggle:hover {
+  background-color: #111;
+  color: white;
+}
+
+/* Apariencia en modo oscuro */
+body.dark .theme-toggle {
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+body.dark .theme-toggle:hover {
+  background-color: white;
+  color: #111;
+}
+
+
+.lang-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.3rem;
+  border-radius: 50%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.lang-toggle:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.lang-flag {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid transparent;
+  transition: border 0.3s ease;
+}
+
+/* Bordes oscuros o claros según el tema */
+body:not(.dark) .lang-flag {
+  border-color: #111;
+}
+
+body.dark .lang-flag {
+  border-color: #fff;
+}
+
+/* === Botón de cambio de idioma === */
+.lang-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  background: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+/* Modo claro */
+body:not(.dark) .lang-toggle {
+  color: #111;
+  border: 1px solid #111;
+  background-color: transparent;
+}
+
+
+
+/* Modo oscuro */
+body.dark .lang-toggle {
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: transparent;
+}
+
+
+
+/* Bandera dentro del botón */
+.lang-flag {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  object-fit: cover;
+  pointer-events: none;
+  transition: transform 0.3s ease;
+}
+
+.lang-toggle:hover .lang-flag {
+  transform: scale(1.05);
+}
+
+/* Contenedor de los toggles */
+.Toggles {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* separa los dos extremos */
+  gap: 0.75rem; /* espacio fijo entre ellos si se centran */
+  min-width: 100px; /* opcional, asegura un ancho mínimo */
+}
+
+.stack {
+  display: flex;
+  flex-wrap: wrap;         /* permite varias filas si hay muchas tecnologías */
+  justify-content: space-between; /* centra todas las unidades horizontalmente */
+  gap: 20px;               /* espacio entre cada tecnología */
+  margin-top: 20px;
+}
+
+.stack_unidad {
+  display: flex;
+  flex-direction: column;  /* 👈 coloca imagen y texto en columna */
+  align-items: center;     /* centra ambos horizontalmente */
+  text-align: center;
+  transition: transform 0.5s ease, filter 0.5s ease;      /* centra el texto */
+}
+
+.stack_unidad img {
+  margin-bottom: 5px;  
+  transition: transform 0.5s ease, filter 0.5s ease;    /* espacio entre imagen y texto */
+}
+/* 🌟 Efecto hover */
+.stack_unidad:hover {
+  transform: scale(1.1);
+}
+
+.stack_unidad:hover img {
+  filter: brightness(1.2);
+}
+
+
+
+/* EXPERIENCE */
+
+/* === EXPERIENCE SECTION === */
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.experience-card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1.2rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+body.dark .experience-card {
+  background-color: #2c2c2c;
+  border: 1px solid #444;
+}
+
+/* Títulos y subtítulos */
+.experience-card h3 {
+  margin-bottom: 0.3rem;
+  color: inherit;
+}
+
+.experience-card h4 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #555;
+}
+
+body.dark .experience-card h4 {
+  color: #ccc;
+}
+
+/* Fechas y ubicación */
+.experience-meta {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+body.dark .experience-meta {
+  color: #aaa;
+}
+
+/* Descripción */
+.experience-description {
+  margin: 0.5rem 0 0.8rem 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Tecnologías */
+.experience-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  justify-content: flex-start;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.skill-item img {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 4px;
+  transition: transform 0.2s;
+}
+
+.skill-item img:hover {
+  transform: scale(1.1);
+}
+
+/* === CONTACT SECTION === */
+
+.contact-info {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.contact-item:hover {
+  transform: translateX(3px);
+}
+
+.contact-item img {
+  width: 26px;
+  height: 26px;
+  transition: transform 0.2s ease;
+}
+
+.contact-item:hover img {
+  transform: scale(1.1);
+}
+
+/* Texto */
+.contact-item span {
+  color: #007bff;
+  font-weight: 500;
+}
+
+body.dark .contact-item span {
+  color: #66b2ff;
+}
+
+/* Ajuste visual en modo oscuro */
+body.dark .contact-item img {
+  filter: brightness(0.85);
+}
+
+/* === WHATSAPP FLOATING BUTTON === */
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #25d366;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.3s;
+  z-index: 1000;
+}
+
+.whatsapp-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.35);
+}
+
+.whatsapp-icon {
+  width: 28px;
+  height: 28px;
+  filter: brightness(0) invert(1);
+}
+
+/* Modo oscuro */
+body.dark .whatsapp-button {
+  background-color: #128c7e;
+}
+
+body.dark .whatsapp-button:hover {
+  background-color: #1ebea5;
+}
+
+
+.studies-section {
+  margin: 2rem 0;
+}
+
+.studies-section h2 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #007bff;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+.studies-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.study-card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.study-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+body.dark .study-card {
+  background-color: #2c2c2c;
+  border: 1px solid #444;
+}
+
+.study-institution {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.study-degree {
+  color: #007bff;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+}
+
+.study-period {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-bottom: 0.5rem;
+}
+
+.study-note {
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
+.study-grade {
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+}
+
+.study-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.study-skill {
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  transition: background-color 0.2s;
+}
+
+.study-skill:hover {
+  background-color: #0056b3;
+}
+
+body.dark .study-skill {
+  background-color: #444;
+  color: #f0f0f0;
+}
+
+body.dark .study-skill:hover {
+  background-color: #666;
+}
+
+/* 🎨 Estilos globales para títulos de secciones */
+section h2 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #007bff;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+  text-align: center;
+}
+
+/* 🧭 Centramos el título dentro del section */
+section {
+  text-align: center;
+}
+.home-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+  padding: 2rem;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.home-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.home-title {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+}
+
+.home-subtitle {
+  font-size: 1.5rem;
+  color: #007bff;
+  margin-bottom: 1.5rem;
+}
+
+.home-description {
+  line-height: 1.7;
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+}
+
+.home-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.btn {
+  padding: 0.8rem 1.6rem;
+  border-radius: 25px;
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.primary-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.primary-btn:hover {
+  background-color: #0056b3;
+}
+
+.secondary-btn {
+  border: 2px solid #007bff;
+  color: #007bff;
+}
+
+.secondary-btn:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* 🌙 Modo oscuro */
+body.dark .home-section {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+body.dark .home-description {
+  color: #ccc;
+}
+
+body.dark .secondary-btn {
+  border-color: #66b2ff;
+  color: #66b2ff;
+}
+
+body.dark .secondary-btn:hover {
+  background-color: #66b2ff;
+  color: #121212;
+}
+.about-section {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.7;
+  padding: 2rem 1rem;
+}
+
+.about-section h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #007bff;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+.about-text,
+.about-extra,
+.about-values {
+  margin-bottom: 1.2rem;
+  font-size: 1.05rem;
+  color: var(--text-color);
+}
+
+.about-values {
+  font-style: italic;
+  opacity: 0.9;
+}
+
+
+/* NAV TE SIGUE */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  z-index: 1000; /* asegura que quede arriba del contenido */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.contact-section {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.contact-section h2 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #007bff;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+.contact-intro {
+  margin: 0 auto 2rem;
+  max-width: 600px;
+  color: var(--text-secondary);
+  font-size: 1rem;
+}
+
+.contact-info,
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.contact-item,
+.contact-social {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+  transition: all 0.3s ease;
+}
+
+.contact-item:hover,
+.contact-social:hover {
+  background-color: var(--hover-bg);
+  transform: scale(1.05);
+}
+
+.contact-item img,
+.contact-social img {
+  width: 28px;
+  height: 28px;
+}
+
+.contact-footer {
+  font-style: italic;
+  color: var(--text-secondary);
+  margin-top: 1rem;
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 0.6rem 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.contact-item:hover {
+  background-color: var(--hover-bg);
+  transform: scale(1.05);
+}
+
+
+.contact-item img {
+  width: 32px;
+  height: 32px;
+  transition: opacity 1.3s ease-in-out, transform 1.3s ease-in-out;
+}
+
+/* Efecto visual al cambiar el icono */
+.contact-item img.changing {
+  opacity: 0;
+  transform: scale(0.95);
+}
+img[src*="github"] {
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+body.dark img[src*="github"] {
+  filter: invert(1);
+}
+
+/* Animación suave cuando cambia el tema */
+body.transitioning img[src*="github"] {
+  opacity: 0;
+  transform: scale(0.95);
+}
+header nav a.active {
+  border-bottom: 2px solid #007bff; /* o el color que uses */
+  padding-bottom: 2px;
+}
+
+
+/* ANIMACION THEME */
+/* Overlay de animación */
+.theme-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999; /* encima de todo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  pointer-events: none;
+  animation: themeReveal 2s ease forwards;
+}
+
+/* Hueco central */
+.theme-overlay::before {
+  content: '';
+  width: 100px;
+  height: 100px;
+  background: transparent;
+  border-radius: 50%;
+  mask-image: url(''); /* Se asignará dinámicamente según luna o sol */
+  -webkit-mask-image: url('');
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+}
+
+/* Animación */
+@keyframes themeReveal {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-110%);
+  }
+}
+
+.theme-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+  display: flex;
+  justify-content: center; /* centro horizontal */
+  align-items: center;     /* centro vertical */
+  pointer-events: none;
+  animation: themeReveal 3s ease forwards;
+  overflow: hidden;
+  
+}
+
+/* Hueco central para sol o luna */
+.theme-overlay .hole {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: transparent;
+  box-shadow: 0 0 0 100vw currentColor; /* color alrededor */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5rem;
+}
+
+/* Media luna */
+.theme-overlay .hole.luna::before {
+  content: '';
+  position: absolute;
+  width: 180px;       /* tamaño del “recorte” de la luna */
+  height: 180px;
+  background: white;  /* color de la página */
+  border-radius: 50%;
+  left: 30%;          /* crea la forma de media luna */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* ANIMACION LENGUAJE */
+.lang-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--background-color); /* color actual del body */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  z-index: 9999;
+  overflow: hidden;
+  transform: translateY(0);
+  transition: transform 4s ease, opacity 4s ease;
+}
+
+.lang-overlay-flag {
+  width: 100vw;
+  height: auto;
+  border-radius: 10px; /* opcional */
+  transform: translateY(0);
+  transition: transform 4s ease;
+ 
+}
+
+.lang-overlay.animate {
+  transform: translateY(-100%);
+}
+
+.lang-overlay.animate .lang-overlay-flag {
+  transform: translateY(-100%);
+}

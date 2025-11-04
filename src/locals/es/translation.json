@@ -1,0 +1,235 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "studies":"Estudios",
+    "projects": "Proyectos",
+    "experience": "Experiencia",
+    "contact": "Contacto"
+  },
+  "home": {
+    "greeting": "Hola, soy {{name}}",
+    "role": "Desarrollador Backend especializado en sistemas robustos y escalables.",
+    "description": "Tengo 22 años y soy un desarrollador de software apasionado por la tecnología, comprometido con convertir esa pasión en una profesión. Soy Técnico en Informática egresado de la EEST N°1 de Pinamar y actualmente finalizo la Tecnicatura Universitaria en Desarrollo de Software en UADE Costa Argentina. Trabajé en sistemas web, herramientas de automatización y desarrollo backend utilizando tecnologías como Python, Flask, Java, Spring y React. Me enfoco en escribir código limpio, mantenible y crear soluciones con impacto real.",
+    "viewProjects": "Ver Proyectos",
+    "linkedin": "Linkedin",
+    "github":"Github"
+  },
+"about": {
+  "title": "Sobre mí",
+  "text": "Soy un desarrollador backend con una gran pasión por construir sistemas eficientes, seguros y bien estructurados. Disfruto diseñar arquitecturas limpias, optimizar procesos y aplicar buenas prácticas de programación para lograr productos escalables y mantenibles. Me destaco por mi capacidad de análisis y por transformar ideas en soluciones reales y funcionales.",
+  "extra": "Durante mi formación y experiencia laboral he trabajado con diversos entornos y lenguajes como Java, Python y JavaScript, aplicando frameworks modernos como Spring Boot, Flask y React. Me interesa la automatización de procesos, el diseño de APIs RESTful y la integración entre frontend y backend. Actualmente sigo perfeccionando mis conocimientos en microservicios, bases de datos distribuidas y despliegue con Docker.",
+  "values": "Soy una persona autodidacta, organizada y comprometida con la mejora continua. Busco constantemente nuevos desafíos que me permitan seguir creciendo como profesional, aportar valor al equipo y mantenerme actualizado en las tendencias tecnológicas.",
+  "techTitle": "Tecnologías principales:",
+  "technologies": [
+    { "name": "Java", "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" },
+    { "name": "Spring Boot", "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" },
+    { "name": "Python", "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+    { "name": "Flask", "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" },
+    { "name": "MySQL", "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
+    { "name": "Selenium", "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/selenium/selenium-original.svg" },
+    { "name": "Github", "image": "githubNegro.svg" },
+    { "name": "React", "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" }
+  ]
+},
+  "projects": {
+    "title": "Proyectos",
+    "project": [
+      {
+        "nameProject": "YR ABERTURAS",
+        "techImages": [
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+        ],
+        "linkGithub": "",
+        "description": "Sitio web para un negocio de aberturas de PVC, desplegado en yraberturas.com. Diseñado e implementado con HTML, CSS, Bootstrap, Figma y React para ofrecer un diseño limpio y adaptable."
+      },
+      {
+        "nameProject": "Aplicaciones y Recibos",
+        "techImages": [
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg"
+        ],
+        "linkGithub": "",
+        "description": "Dos aplicaciones simples en Python diseñadas para sincronizar archivos de presupuestos laborales entre emisor y receptor. Construidas con Tkinter para la interfaz gráfica y la API de Google Drive para automatizar la carga y descarga de archivos."
+      },
+      {
+        "nameProject": "Asistec",
+        "techImages": [
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg",
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+          "xampp.svg",
+          "githubNegro.svg"
+        ],
+        "linkGithub": "https://github.com/LucianoPiehl/Asistec",
+        "description": "Proyecto en equipo desarrollado como sistema digital de asistencia utilizando HTML, CSS, PHP, MySQL y XAMPP. Mi rol fue crear las plantillas del frontend y gestionar la comunicación cliente-servidor utilizando la metodología en cascada."
+      },
+      {
+        "nameProject": "Evaluación Técnica - Alquila tu Cancha",
+        "techImages": [
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg",
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+          "githubNegro.svg"
+        ],
+        "linkGithub": "https://github.com/LucianoPiehl/alquilatucancha-backend-challenge",
+        "description": "Evaluación técnica donde implementé sistemas de caché y optimicé las respuestas de los endpoints de la API. Aprendí sobre Node.js, Redis y arquitectura de microservicios."
+      },
+      {
+        "nameProject": "Sistema de Notas",
+        "techImages": [
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg",
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+          "githubNegro.svg"
+        ],
+        "linkGithub": "https://github.com/LucianoPiehl/NotesSystem",
+        "description": "Sistema funcional de gestión de notas desarrollado con Java, Spring MVC, MySQL y React. Incluye una interfaz intuitiva y centrada en el diseño y la usabilidad del software."
+      },
+      {
+        "nameProject": "Sistema de Tareas",
+        "techImages": [
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg",
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+          "githubNegro.svg"
+        ],
+        "linkGithub": "https://github.com/LucianoPiehl/GestorDeTareas/tree/main",
+        "description": "Sistema de gestión de tareas construido con Flask para la API REST y JavaScript para las interacciones del frontend. Implementa operaciones CRUD, una interfaz amigable y principios RESTful."
+      },
+      {
+        "nameProject": "Sistema para Administrar Carreras y Corredores",
+        "techImages": [
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+          "githubNegro.svg"
+        ],
+        "linkGithub": "https://github.com/LucianoPiehl/Carreras",
+        "description": "Aplicación Java creada para fortalecer habilidades de programación orientada a objetos. Diseñada para gestionar carreras y corredores sin usar frameworks, enfocada en entender objetos, instancias y comportamiento de clases."
+      }
+    ]
+  },
+"experience": {
+  "title": "Experiencia",
+  "jobs": [
+    {
+      "position": "Desarrollo de Página Web",
+      "company": "YR Aberturas",
+      "type": "Contrato temporal",
+      "date": "may. 2024 - jun. 2024 · 2 meses",
+      "location": "Pinamar, Provincia de Buenos Aires, Argentina · En remoto",
+      "description": "Desarrollé una página web para la empresa utilizando HTML, CSS, JavaScript, Bootstrap y Figma. Me enfoqué en la estructura visual, la optimización SEO y la adaptabilidad del diseño.",
+      "skills": [
+        { "name": "HTML", "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
+        { "name": "CSS", "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
+        { "name": "JavaScript", "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+        { "name": "Bootstrap", "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" },
+        { "name": "Figma", "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" },
+        { "name": "GitHub", "image": "githubNegro.svg" }
+      ]
+    },
+    {
+      "position": "Desarrollador de Software",
+      "company": "Cipher",
+      "type": "Jornada parcial",
+      "date": "ene. 2022 - dic. 2022 · 1 año",
+      "location": "Pinamar, Provincia de Buenos Aires, Argentina · En remoto",
+      "description": "Desarrollo de software con enfoque en microservicios, automatización de pruebas y aplicaciones inteligentes. Participé en la implementación de APIs, automatización con Selenium y Appium, y mantenimiento de sistemas backend con Flask y Spring.",
+      "skills": [
+        { "name": "Flask", "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" },
+        { "name": "GitHub", "image": "githubNegro.svg" },
+        { "name": "PHP", "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" },
+        { "name": "HTML5", "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
+        { "name": "CSS", "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
+        { "name": "Appium", "image": "appium.svg" },
+        { "name": "Spring", "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" },
+        { "name": "Maven", "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/maven/maven-original.svg" },
+        { "name": "Selenium", "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/selenium/selenium-original.svg" },
+        { "name": "Java", "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" },
+        { "name": "MySQL", "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
+        { "name": "Python", "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" }
+      ]
+    }
+  ]
+},
+
+"contact": {
+  "title": "Contacto",
+  "text": "Si querés contactarme, podés escribirme a:",
+  "mail": "lucianopiehlsoftware@gmail.com",
+  "wpp": "+54 2254 414767",
+  "line":"Siempre abierto a nuevas oportunidades y colaboraciones."
+},
+"studies": {
+  "title": "Estudios",
+  "items": [
+    {
+      "institution": "UADE Costa Argentina",
+      "degree": "Técnico en Desarrollo de Software",
+      "period": "Ene. 2021 - Jul. 2024",
+      "grade": "Promedio: 6,93",
+      "note": "He completado todas las materias de la carrera técnica, solo me resta rendir los exámenes finales para obtener el título.",
+      "skills": [
+        "Bases de datos",
+        "Casos de prueba",
+        "MVC",
+        "Spring Framework",
+        "HTML",
+        "Maven",
+        "Selenium",
+        "MySQL",
+        "Flask",
+        "Java",
+        "Software Design",
+        "CSS",
+        "GitHub",
+        "Python",
+        "Selenium WebDriver",
+        "Figma",
+        "API Development",
+        "Microservicios",
+        "Spring MVC",
+        "SEO"
+      ]
+    },
+    {
+      "institution": "EEST N°1 Pinamar",
+      "degree": "Técnico en Programación",
+      "period": "Ene. 2014 - Dic. 2021",
+      "grade": "Promedio: 7,43",
+      "skills": [
+        "Bases de datos",
+        "HTML",
+        "MySQL",
+        "Software Design",
+        "CSS",
+        "GitHub",
+        "Figma",
+        "API Development",
+        "UML",
+        "Metodologias de trabajo"
+      ]
+    }
+  ]
+},
+  "footer": {
+    "rights": "Todos los derechos reservados."
+  },
+
+  "theme": {
+    "dark": "Modo Oscuro",
+    "light": "Modo Claro"
+  }
+}
+
