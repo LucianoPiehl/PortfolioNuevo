@@ -963,3 +963,94 @@ header nav a.active {
 .lang-overlay.animate .lang-overlay-flag {
   transform: translateY(-100%);
 }
+
+
+/* NUEVO 13-12 */
+/* ===== MENU MOBILE ===== */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 24px;
+  height: 2px;
+  background-color: #333;
+}
+
+body.dark .hamburger span {
+  background-color: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-wrap: wrap;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  header nav {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  header nav.open {
+    display: flex;
+  }
+
+  header nav a {
+    margin: 0.5rem 0;
+  }
+
+  .Toggles {
+    width: 100%;
+    justify-content: flex-start;
+    margin-top: 0.5rem;
+  }
+}
+/* FIX HOME */
+/* ===== FIX HOME MOBILE ===== */
+.home-section {
+  overflow-x: hidden;
+}
+
+.home-content {
+  padding: 0 1rem;
+  max-width: 100%;
+}
+
+.home-title {
+  word-wrap: break-word;
+}
+
+.home-buttons {
+  flex-wrap: wrap;
+}
+
+@media (max-width: 480px) {
+  .home-title {
+    font-size: 2rem;
+  }
+
+  .home-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .home-buttons {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}

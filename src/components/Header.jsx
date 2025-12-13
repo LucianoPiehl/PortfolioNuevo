@@ -8,9 +8,9 @@ function Header() {
   const { t } = useTranslation();
   const location = useLocation();
   const [activeSection, setActiveSection] = useState("");
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
-    // Detecta la sección activa solo si estamos en "/" (Home con scroll)
     if (location.pathname === "/") {
       const handleScroll = () => {
         const sections = document.querySelectorAll("section[id]");
@@ -22,23 +22,19 @@ function Header() {
         sections.forEach((section) => {
           const top = section.offsetTop - offset;
           const bottom = top + section.offsetHeight;
-          if (scrollY >= top && scrollY < bottom) {
-            current = section.id;
-          }
+          if (scrollY >= top && scrollY < bottom) current = section.id;
         });
         setActiveSection(current || "home");
       };
 
-      handleScroll(); // inicializa
+      handleScroll();
       window.addEventListener("scroll", handleScroll);
       return () => window.removeEventListener("scroll", handleScroll);
     } else {
-      // Si no estamos en Home, activa la ruta
       setActiveSection(location.pathname.substring(1) || "home");
     }
   }, [location]);
 
-  // Mapea links con su path y key para traducción
   const navLinks = [
     { path: "/", key: "home" },
     { path: "/about", key: "about" },
@@ -51,17 +47,30 @@ function Header() {
   return (
     <header>
       <h1>Luciano Piehl</h1>
-      <nav>
+
+      <button
+        className="hamburger"
+        onClick={() => setMenuOpen(!menuOpen)}
+        aria-label="Menu"
+      >
+        <span />
+        <span />
+        <span />
+      </button>
+
+      <nav className={menuOpen ? "open" : ""}>
         {navLinks.map(({ path, key }) => (
           <Link
             key={key}
             to={path}
             className={activeSection === key ? "active" : ""}
+            onClick={() => setMenuOpen(false)}
           >
             {t(`nav.${key}`)}
           </Link>
         ))}
       </nav>
+
       <div className="Toggles">
         <LanguageToggle />
         <ThemeToggle />
