@@ -32,7 +32,7 @@ function App() {
   });
 }, []);
   return (
-    <Router>
+    <Router basename="/PortfolioNuevo">
       <ScrollToTop />
       <div>
         <Header />
