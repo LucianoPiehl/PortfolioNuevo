@@ -10,14 +10,14 @@
   "home": {
     "greeting": "Hi, I'm {{name}}",
     "role": "Junior Backend Developer | Java · Python · SQL",
-    "description": "Software developer with experience in backend applications, APIs, and web and mobile automation using Java and Python. Contributed to a multitenant management system built with Spring Boot and MySQL. Completing the University Technical Degree in Software Development at UADE Costa Argentina, with the final project graded 9/10 and one final exam remaining.",
+    "description": "Software developer with experience in backend applications, APIs, and web and mobile automation using Java and Python. Contributed to a multitenant management system built with Spring Boot and MySQL. Completing the University Technical Degree in Software Development at UADE Costa Argentina, with one final exam remaining.",
     "viewProjects": "View Projects",
     "linkedin": "Linkedin",
     "github": "Github"
   },
   "about": {
     "title": "About me",
-    "text": "Software developer with experience in backend applications, APIs, and web and mobile automation using Java and Python. Contributed to a multitenant management system built with Spring Boot and MySQL. Completing the University Technical Degree in Software Development at UADE Costa Argentina, with the final project graded 9/10 and one final exam remaining.",
+    "text": "Software developer with experience in backend applications, APIs, and web and mobile automation using Java and Python. Contributed to a multitenant management system built with Spring Boot and MySQL. Completing the University Technical Degree in Software Development at UADE Costa Argentina, with one final exam remaining.",
     "extra": "My experience includes backend development with Java, Spring, Python and Flask; REST APIs; web and mobile automation; and SQL databases. I also built an e-commerce website with Node.js, JavaScript and Mercado Pago payment integration.",
     "values": "Across my projects, I have worked both in a team and across the full application: from backend and data to automation and service integration.",
     "techTitle": "Main technologies:",
@@ -60,7 +60,7 @@
     "title": "Projects",
     "project": [
       {
-        "nameProject": "Sistema de gestión para pinturerías | Tesis 9/10",
+        "nameProject": "Sistema de gestión para pinturerías | Tesis universitaria",
         "techImages": [
           "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
           "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg",
@@ -68,7 +68,7 @@
           "githubNegro.svg"
         ],
         "linkGithub": "https://github.com/LucianoPiehl/Pinturerias",
-        "description": "University final project graded 9/10, developed in a three-person team. Multitenant system built with Spring Boot, Java 17, Spring Data JPA/Hibernate, MySQL, Flyway and Maven. Handles sales, inventory, orders, branches, users and permissions, with revenue and best-selling product reports. Functional locally; not deployed."
+        "description": "University final project graded 9/10, developed in a three-person team. Multitenant system built with Spring Boot, Java 17, Spring Data JPA/Hibernate, MySQL, Flyway and Maven. Handles sales, inventory, orders, branches, users and permissions, with revenue and best-selling product reports."
       },
       {
         "nameProject": "Botánica del Mar | Tienda web y panel administrativo",
@@ -79,7 +79,7 @@
           "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
         ],
         "linkGithub": "https://github.com/LucianoPiehl/BotanicaDelMar",
-        "description": "Online natural cosmetics store with an administration panel and Node.js backend. REST API, order and pricing management, authentication, metrics and JSON persistence; Mercado Pago Checkout Pro and webhook integration. Payments were validated with personal live purchases. Developed from June to August 2026; no real customers yet."
+        "description": "Online natural cosmetics store with an administration panel and Node.js backend. REST API, order and pricing management, authentication, metrics and JSON persistence; Mercado Pago Checkout Pro and webhook integration. Payments were validated with personal live purchases. Developed from June to August 2026."
       },
       {
         "nameProject": "Evaluación técnica | AlquilaTuCancha",
@@ -126,7 +126,7 @@
           "githubNegro.svg"
         ],
         "linkGithub": "https://github.com/LucianoPiehl/farmacia",
-        "description": "Working prototype developed during an administrative role at Farmashaw (January–March 2024). Python, Selenium and openpyxl to compare supplier prices and prepare orders from Excel files. Not deployed because of access limits on supplier web interfaces. Code published on GitHub in November 2024."
+        "description": "Price automation tool developed during an administrative role at Farmashaw (January–March 2024). Python, Selenium and openpyxl to compare supplier prices and prepare orders from Excel files. Code published on GitHub in November 2024."
       },
       {
         "nameProject": "Asistec | Sistema digital de asistencia",
@@ -146,7 +146,7 @@
           "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
         ],
         "linkGithub": "https://github.com/LucianoPiehl/Carreras",
-        "description": "Academic Java exercise covering object-oriented programming, classes, inheritance and relationships between races and runners, without external frameworks. Published on GitHub in March 2025."
+        "description": "Academic Java exercise covering object-oriented programming, classes, inheritance and relationships between races and runners. Published on GitHub in March 2025."
       },
       {
         "nameProject": "YR Aberturas | Sitio web comercial",
@@ -158,7 +158,7 @@
           "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
         ],
         "linkGithub": "",
-        "description": "Business website developed as a one-month project for a family business, based on a Figma design. Built with React, HTML, CSS and Bootstrap. Not currently deployed."
+        "description": "Business website developed as a one-month project for a family business, based on a Figma design. Built with React, HTML, CSS and Bootstrap."
       }
     ]
   },
@@ -171,7 +171,7 @@
         "type": "Family business project · 1 month",
         "date": "Aug. 2024",
         "location": "Buenos Aires, Argentina",
-        "description": "Built a business website from a Figma design using React, HTML, CSS and Bootstrap. The site is not currently deployed.",
+        "description": "Built a business website from a Figma design using React, HTML, CSS and Bootstrap.",
         "skills": [
           {
             "name": "React",
@@ -201,7 +201,7 @@
         "type": "Seasonal · 3 months",
         "date": "Jan. 2024 – Mar. 2024",
         "location": "Argentina",
-        "description": "Administrative work in inventory and purchasing. During this period, built a Python/Selenium prototype to compare prices and prepare orders; it was not deployed.",
+        "description": "Administrative work in inventory and purchasing. During this period, built a Python/Selenium tool to compare prices and prepare orders.",
         "skills": [
           {
             "name": "Python",
@@ -263,7 +263,7 @@
         "institution": "UADE Costa Argentina",
         "degree": "University Technical Degree in Software Development",
         "period": "2022 – November 2026 (expected graduation)",
-        "grade": "Final project graded 9/10",
+        "grade": "",
         "note": "One final exam remaining to complete the degree.",
         "skills": [
           "Java",

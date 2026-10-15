@@ -10,14 +10,14 @@
   "home": {
     "greeting": "Hola, soy {{name}}",
     "role": "Desarrollador Backend Junior | Java · Python · SQL",
-    "description": "Desarrollador de software con experiencia en aplicaciones backend, APIs y automatización web y móvil con Java y Python. Participé en el desarrollo de un sistema de gestión multitenant con Spring Boot y MySQL. Estoy finalizando la Tecnicatura Universitaria en Desarrollo de Software en UADE Costa Argentina: tesis aprobada con 9/10 y un examen final pendiente.",
+    "description": "Desarrollador de software con experiencia en aplicaciones backend, APIs y automatización web y móvil con Java y Python. Participé en el desarrollo de un sistema de gestión multitenant con Spring Boot y MySQL. Estoy finalizando la Tecnicatura Universitaria en Desarrollo de Software en UADE Costa Argentina y me queda un examen final pendiente.",
     "viewProjects": "Ver Proyectos",
     "linkedin": "Linkedin",
     "github": "Github"
   },
   "about": {
     "title": "Sobre mí",
-    "text": "Desarrollador de software con experiencia en aplicaciones backend, APIs y automatización web y móvil con Java y Python. Participé en el desarrollo de un sistema de gestión multitenant con Spring Boot y MySQL. Estoy finalizando la Tecnicatura Universitaria en Desarrollo de Software en UADE Costa Argentina: tesis aprobada con 9/10 y un examen final pendiente.",
+    "text": "Desarrollador de software con experiencia en aplicaciones backend, APIs y automatización web y móvil con Java y Python. Participé en el desarrollo de un sistema de gestión multitenant con Spring Boot y MySQL. Estoy finalizando la Tecnicatura Universitaria en Desarrollo de Software en UADE Costa Argentina y me queda un examen final pendiente.",
     "extra": "Mi experiencia incluye desarrollo backend con Java, Spring, Python y Flask; APIs REST; automatización web y móvil; y bases de datos SQL. También desarrollé un sitio de comercio electrónico con Node.js, JavaScript e integración de pagos con Mercado Pago.",
     "values": "En mis proyectos trabajé en equipo y de forma integral: desde el backend y los datos hasta la automatización y la integración de servicios.",
     "techTitle": "Tecnologías principales:",
@@ -60,7 +60,7 @@
     "title": "Proyectos",
     "project": [
       {
-        "nameProject": "Sistema de gestión para pinturerías | Tesis 9/10",
+        "nameProject": "Sistema de gestión para pinturerías | Tesis universitaria",
         "techImages": [
           "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
           "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg",
@@ -68,7 +68,7 @@
           "githubNegro.svg"
         ],
         "linkGithub": "https://github.com/LucianoPiehl/Pinturerias",
-        "description": "Tesis universitaria aprobada con 9/10, desarrollada en un equipo de tres personas. Sistema multitenant con Spring Boot, Java 17, Spring Data JPA/Hibernate, MySQL, Flyway y Maven. Gestiona ventas, stock, pedidos, sucursales, usuarios y permisos, con reportes de facturación y productos más vendidos. Funcional en entorno local; no desplegado."
+        "description": "Tesis universitaria aprobada con 9/10 y desarrollada en un equipo de tres personas. Sistema multitenant con Spring Boot, Java 17, Spring Data JPA/Hibernate, MySQL, Flyway y Maven. Gestiona ventas, stock, pedidos, sucursales, usuarios y permisos, con reportes de facturación y productos más vendidos."
       },
       {
         "nameProject": "Botánica del Mar | Tienda web y panel administrativo",
@@ -79,7 +79,7 @@
           "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
         ],
         "linkGithub": "https://github.com/LucianoPiehl/BotanicaDelMar",
-        "description": "Tienda online de cosmética natural con panel administrativo y backend Node.js. API REST, gestión de pedidos y precios, autenticación, métricas y persistencia JSON; integración con Mercado Pago Checkout Pro y webhooks. Los pagos se validaron con compras propias reales. Desarrollo de junio a agosto de 2026; aún sin clientes reales."
+        "description": "Tienda online de cosmética natural con panel administrativo y backend Node.js. API REST, gestión de pedidos y precios, autenticación, métricas y persistencia JSON; integración con Mercado Pago Checkout Pro y webhooks. Los pagos se validaron con compras propias reales. Desarrollo de junio a agosto de 2026."
       },
       {
         "nameProject": "Evaluación técnica | AlquilaTuCancha",
@@ -126,7 +126,7 @@
           "githubNegro.svg"
         ],
         "linkGithub": "https://github.com/LucianoPiehl/farmacia",
-        "description": "Prototipo funcional desarrollado durante el trabajo administrativo en Farmashaw (enero–marzo de 2024). Python, Selenium y openpyxl para comparar precios de proveedores y preparar pedidos desde Excel. No se implementó por límites de acceso de las interfaces web de los proveedores. Código publicado en GitHub en noviembre de 2024."
+        "description": "Herramienta de automatización desarrollada durante el trabajo administrativo en Farmashaw (enero–marzo de 2024). Python, Selenium y openpyxl para comparar precios de proveedores y preparar pedidos desde Excel. Código publicado en GitHub en noviembre de 2024."
       },
       {
         "nameProject": "Asistec | Sistema digital de asistencia",
@@ -146,7 +146,7 @@
           "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
         ],
         "linkGithub": "https://github.com/LucianoPiehl/Carreras",
-        "description": "Ejercicio académico desarrollado en Java para practicar programación orientada a objetos, clases, herencia y relaciones entre carreras y corredores, sin frameworks externos. Publicado en GitHub en marzo de 2025."
+        "description": "Ejercicio académico desarrollado en Java para practicar programación orientada a objetos, clases, herencia y relaciones entre carreras y corredores. Publicado en GitHub en marzo de 2025."
       },
       {
         "nameProject": "YR Aberturas | Sitio web comercial",
@@ -158,7 +158,7 @@
           "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
         ],
         "linkGithub": "",
-        "description": "Sitio comercial desarrollado en un proyecto de un mes para una empresa familiar, a partir de un diseño en Figma. Implementado con React, HTML, CSS y Bootstrap. No está desplegado actualmente."
+        "description": "Sitio comercial desarrollado en un proyecto de un mes para una empresa familiar, a partir de un diseño en Figma. Implementado con React, HTML, CSS y Bootstrap."
       }
     ]
   },
@@ -171,7 +171,7 @@
         "type": "Proyecto para empresa familiar · 1 mes",
         "date": "ago. 2024",
         "location": "Buenos Aires, Argentina",
-        "description": "Desarrollo de un sitio comercial a partir de un diseño en Figma, con React, HTML, CSS y Bootstrap. El sitio no está desplegado actualmente.",
+        "description": "Desarrollo de un sitio comercial a partir de un diseño en Figma, con React, HTML, CSS y Bootstrap.",
         "skills": [
           {
             "name": "React",
@@ -201,7 +201,7 @@
         "type": "Temporada · 3 meses",
         "date": "ene. 2024 – mar. 2024",
         "location": "Argentina",
-        "description": "Tareas administrativas de stock y compras. Durante este período desarrollé un prototipo con Python y Selenium para comparar precios y preparar pedidos; no llegó a implementarse.",
+        "description": "Tareas administrativas de stock y compras. Durante este período desarrollé una herramienta con Python y Selenium para comparar precios y preparar pedidos.",
         "skills": [
           {
             "name": "Python",
@@ -263,7 +263,7 @@
         "institution": "UADE Costa Argentina",
         "degree": "Tecnicatura Universitaria en Desarrollo de Software",
         "period": "2022 – noviembre de 2026 (egreso previsto)",
-        "grade": "Tesis aprobada: 9/10",
+        "grade": "",
         "note": "Un examen final pendiente para completar la carrera.",
         "skills": [
           "Java",
